@@ -2,6 +2,14 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap');
 
+.attribution { 
+    width: 300px; 
+    font-size: 11px; 
+    text-align: center; 
+    margin-top: 100px;
+}
+.attribution a { color: hsl(228, 45%, 44%); }
+
 :root{
     --cor0:hsl(223, 87%, 63%);
     --cor1:hsl(223, 100%, 88%);
@@ -35,7 +43,7 @@ section{
     height: 200px;
 }
 .first-title{
-    font-size: 20px;
+    font-size: 25px;
     font-weight:300;
     margin-bottom: 15px;
     color: var(--cor3);
@@ -81,7 +89,7 @@ button:hover{
     background-color: hsl(223, 89%, 70%);
 }
 .dashboard{
-    margin: 70px 0px;
+    margin: 70px 0px 35px 0px;
     width: 350px;
 }
 .logo-image{
@@ -94,7 +102,7 @@ button:hover{
     height: 60px;
     width: 200px;
 }
-.social-icon{
+#icon{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -104,4 +112,13 @@ button:hover{
     border-radius: 50%;
     background-color: white;
     cursor: pointer;
+}
+i{
+    color: #0066ff;
+}#msg-erro{
+    display: none;
+    font-size: 13px;
+    margin:5px 0px 0px 30px;
+    text-align: left;
+    color: red;
 }

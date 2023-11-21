@@ -1,1 +1,57 @@
 @charset "UTF-8";
+
+@media screen and (min-width:800px) {
+
+main{
+    width: 600px;
+    margin-top: 100px;
+}
+.dashboard{
+    margin: 40px 0px 20px 0px;
+    width: 600px;
+}
+.submits{
+    height: 50px;
+    flex-direction: row;
+}
+input{
+    width:300px;
+}
+button{
+    width:150px;
+    margin-left: 10px;
+}
+.first-title{
+    font-size: 40px;
+}
+.logo-image{
+    width: 77.6px;
+}
+.subs{
+    font-size: 18px;
+    font-weight: 300;
+}
+i:hover{
+    color: white;
+}
+.subs2{
+    font-size: 14px;
+    font-weight: 300;
+}
+#icon:hover{
+    transition: .2s;
+    scale: 1.2;
+    background-color: #0066ff;
+}
+#icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    border: 1px solid var(--cor3);
+    border-radius: 50%;
+    background-color: white;
+    cursor: pointer;
+}
+}

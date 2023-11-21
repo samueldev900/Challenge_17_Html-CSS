@@ -14,28 +14,30 @@
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
 </head>
 <body>
-    <main>
+    <main id="main">
       <img class="logo-image" src="images/logo.svg" alt="logo">
       <section>
-        
           <div class="text">
             <span class="first-title">We are launching <span>soon!</span></span>
             <span class="subs">Subscribe and get notified</span>
           </div>
 
-          <form class="submits">
-            <input type="email" name="email" id="iemail" placeholder="Your email address..">
-            <button>Notify Me</button>
-          </form>
+          <div class="erro">
+            <form class="submits">
+              <input oninput="validateEmail()" type="email" name="email" id="iemail" placeholder="Your email address..">
+              <button onclick="noRefresh(event)" >Notify Me</button>
+            </form>
+            <p id="msg-erro">• Please provide a valid email address
+          </div>
       </section>
       <img class="dashboard" src="images/illustration-dashboard.png" alt="dashboard">
       <section class="block-social">
-        <div class="social-icon"><i class="fa-brands fa-facebook-f" style="color: #0066ff;"></i></div>
-        <div class="social-icon"><i class="fa-brands fa-twitter" style="color: #0066ff;"></i></div>
-        <div class="social-icon"><i class="fa-brands fa-instagram" style="color: #0066ff;"></i></div>
+        <i id="icon" class="fa-brands fa-facebook-f"></i>
+        <i id="icon"  class="fa-brands fa-twitter"></i>
+        <i id="icon"  class="fa-brands fa-instagram"></i>
       </section>
     </main>
-    <span class="subs">&copy; Copyright Ping. All rights reserved.</span>
+    <span class="subs subs2">&copy; Copyright Ping. All rights reserved.</span>
 
   <footer>
     <p class="attribution">
@@ -43,5 +45,32 @@
       Coded by <a href="https://github.com/samueldev900">Samuel Oliveira</a>.
     </p>
   </footer>
+  <script>
+    var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    email = document.getElementById('iemail')
+    msgErro = document.getElementById('msg-erro')
+    function noRefresh(event){
+      event.preventDefault();
+    }
+    function erro(){
+      msgErro.style.display = 'block';
+      email.style.border = '1px solid red';
+    }
+    function removeErro(){
+      msgErro.style.display = 'none';
+      email.style.border = '1px solid #0066ff';
+    }
+
+    function validateEmail(){
+
+      if(!emailRegex.test(email.value)){
+        erro();
+      }
+      else{
+        removeErro();
+      }
+  }
+
+  </script> 
 </body>
 </html>
