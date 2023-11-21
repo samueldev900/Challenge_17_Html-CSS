@@ -1,0 +1,107 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap');
+
+:root{
+    --cor0:hsl(223, 87%, 63%);
+    --cor1:hsl(223, 100%, 88%);
+    --cor2:hsl(354, 100%, 66%);
+    --cor3:hsl(0, 0%, 59%);
+    --cor4:hsl(209, 33%, 12%);
+}
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Libre Franklin', sans-serif;
+}
+body{
+    display: grid;
+    place-items: center;
+}
+main{
+    width: 350px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 100px;
+}
+section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 200px;
+}
+.first-title{
+    font-size: 20px;
+    font-weight:300;
+    margin-bottom: 15px;
+    color: var(--cor3);
+}
+.first-title span{
+    font-weight: 700;
+    color: var(--cor4);
+}
+.subs{
+    font-size: 14px;
+    font-weight: 300;
+}
+.submits{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 92px;
+}
+.text{
+    display: flex;
+    flex-direction: column;
+}
+input{
+    width:240px;
+    height: 20px;
+    padding: 10px 20px;
+    border-radius: 25px;
+    border: 1px solid var(--cor0);
+    outline: none;
+}
+button{
+    width:282px;
+    height: 42px;
+    border-radius: 25px;
+    border: none;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+    background-color: var(--cor0);
+}
+button:hover{
+    background-color: hsl(223, 89%, 70%);
+}
+.dashboard{
+    margin: 70px 0px;
+    width: 350px;
+}
+.logo-image{
+    margin-bottom: 25px;
+    width: 60.2px;
+}
+.block-social{
+    display: flex;
+    flex-direction: row;
+    height: 60px;
+    width: 200px;
+}
+.social-icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    border: 1px solid var(--cor3);
+    border-radius: 50%;
+    background-color: white;
+    cursor: pointer;
+}

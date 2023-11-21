@@ -5,29 +5,42 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="estilo/style.css">
+  <link rel="stylesheet" href="estilo/query.css" media="screen">
+  <script src="https://kit.fontawesome.com/15bc59f810.js" crossorigin="anonymous"></script>
   
   <title>Frontend Mentor | Ping coming soon page</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
+    <main>
+      <img class="logo-image" src="images/logo.svg" alt="logo">
+      <section>
+        
+          <div class="text">
+            <span class="first-title">We are launching <span>soon!</span></span>
+            <span class="subs">Subscribe and get notified</span>
+          </div>
 
-  We are launching soon!
-
-  Subscribe and get notified
-
-  Notify Me
-
-  &copy; Copyright Ping. All rights reserved.
+          <form class="submits">
+            <input type="email" name="email" id="iemail" placeholder="Your email address..">
+            <button>Notify Me</button>
+          </form>
+      </section>
+      <img class="dashboard" src="images/illustration-dashboard.png" alt="dashboard">
+      <section class="block-social">
+        <div class="social-icon"><i class="fa-brands fa-facebook-f" style="color: #0066ff;"></i></div>
+        <div class="social-icon"><i class="fa-brands fa-twitter" style="color: #0066ff;"></i></div>
+        <div class="social-icon"><i class="fa-brands fa-instagram" style="color: #0066ff;"></i></div>
+      </section>
+    </main>
+    <span class="subs">&copy; Copyright Ping. All rights reserved.</span>
 
   <footer>
     <p class="attribution">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.
+      Coded by <a href="https://github.com/samueldev900">Samuel Oliveira</a>.
     </p>
   </footer>
 </body>
